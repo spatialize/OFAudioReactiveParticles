@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AB0B83C2-B651-41AB-9963-CFDD3A5144BD</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>118C5279CF76F1A25D6117FD04DEF152863C0C4C</key>
+		<string>https://github.com/ofZach/algo2012.git</string>
+		<key>E1973EE936B32FD6C1A9080FB86363F99151DFAC</key>
+		<string>https://github.com/darrenmothersele/ofxBeat.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>118C5279CF76F1A25D6117FD04DEF152863C0C4C</key>
+		<string>../algo2012</string>
+		<key>E1973EE936B32FD6C1A9080FB86363F99151DFAC</key>
+		<string>ofxBeat/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/darrenmothersele/ofxBeat.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E1973EE936B32FD6C1A9080FB86363F99151DFAC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>118C5279CF76F1A25D6117FD04DEF152863C0C4C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>algo2012</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E1973EE936B32FD6C1A9080FB86363F99151DFAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxBeat</string>
+		</dict>
+	</array>
+</dict>
+</plist>
