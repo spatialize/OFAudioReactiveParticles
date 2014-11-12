@@ -76,20 +76,21 @@ void ofApp::draw(){
     
     if (kick > 9){ bRepel = !bRepel; }
     
-    if (hihat > 1){
-        dxRadius = ofMap(hihat, 1, 10, 0, 50); }
+    if (hihat){
+        dxRadius = ofMap(hihat, 1, 10, 0, 150); }
         float diff = radius - dxRadius;
     
         if (abs(diff) >  0.01) {
         
             radius -= diff/10.0;
+            radius = radius+1;
             //cout << "radius:" << radius << ":"<< dxRadius << ":" << diff <<endl;
  
         }
 
     if (snare > .5){ strength = ofMap(snare, .5, 10, .5, 7); }
-    if (magnitude > 1.9 ){ textDraw = verbs[ofRandom(verbs.size()-1)] + "/" + nouns[ofRandom(nouns.size()-1)];}
-    textAlpha = ofMap(snare, 0, 10, 50, 255);
+    if ((magnitude > 1 ) && (int(ofRandom(0,5)) == 3)){ textDraw = verbs[ofRandom(verbs.size()-1)] + "/" + nouns[ofRandom(nouns.size()-1)];}
+    textAlpha = ofMap(snare, 0, 2, 50, 255);
 
 
 
@@ -177,12 +178,12 @@ void ofApp::showParticles(){
     ofSetRectMode(OF_RECTMODE_CENTER);
     for (int i = 0; i < particles.size(); i++){
 
-        ofSetColor(255,255,255,ofMap(spectHist[j][12], 0, 100, 20, 255));
+        ofSetColor(255,255,255,ofMap(spectHist[j][6], 0, 100, 50, 255));
         particles[i].draw(i/2);
-        ofSetColor(255,255,255,ofMap(spectHist[j][8], 0, 100, 60, 255));
-        particles[i].draw(10+hihat*15);
-        ofSetColor(255,255,255,ofMap(spectHist[j][2], 0, 100, 80, 255));
-        particles[i].draw(25+kick*20);
+        ofSetColor(255,255,255,ofMap(spectHist[j][4], 0, 100, 50, 255));
+        particles[i].draw(25+hihat*20);
+        ofSetColor(255,255,255,ofMap(spectHist[j][0], 0, 100, 50, 255));
+        particles[i].draw(25+kick*30);
         
         
     }
@@ -339,7 +340,7 @@ void ofApp::update(){
 
     
     for (int i = 0; i < particles.size(); i++){
-        particles[i].addAttractionForce(ofGetWidth()/2, ofGetHeight()/2, 1000, 0.4);
+        particles[i].addAttractionForce(ofGetWidth()/2, ofGetHeight()/2, 1000, 1);
         particles[i].addDampingForce();
         particles[i].update();
         particles[i].bounceOffWalls();
